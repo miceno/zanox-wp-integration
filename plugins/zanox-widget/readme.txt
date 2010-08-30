@@ -1,6 +1,5 @@
 === Zanox Widget ===
 
-Contributors: hangy
 Tags: tag, zanox, metrics, widget
 Requires at least: 2.3
 Tested up to: 2.4

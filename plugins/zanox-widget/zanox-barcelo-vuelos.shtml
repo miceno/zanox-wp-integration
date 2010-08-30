@@ -1,0 +1,199 @@
+<!-- START of the zanox affiliate HTML code -->
+<!-- ( The HTML code may not be changed in the sense of faultless functionality! ) -->
+<img src="http://ad.zanox.com/ppv/?16007196C462739879" align="bottom" width="1" height="1" border="0" hspace="1"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="http://www.barceloviajes.com/sites/all/styles/calendar.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.barceloviajes.com/sites/all/styles/tooltips.css" type="text/css" media="all">
+<script type="text/javascript" src="http://www.barceloviajes.com/jsgen/campos.js"></script>
+<script type="text/javascript" src="http://www.barceloviajes.com/jsgen/fechas.js"></script>
+<script type="text/javascript" src="http://www.barceloviajes.com/jsgen/moo/prototype.js"></script>
+<script type="text/javascript" src="http://www.barceloviajes.com/jsgen/moo/moo.fx.js"></script>
+<script type="text/javascript" src="http://www.barceloviajes.com/jsgen/moo/moo.fx.pack.js"></script>
+<script type="text/javascript">
+//<![CDATA[	
+
+var MSG_NO_ORIGEN = "Escribe el origen en este cuadro de texto.";
+var MSG_NO_DESTINO = "Escribe el destino en este cuadro de texto.";
+var MSG_NO_FIDA = "La fecha de salida no puede estar vacía.";
+var MSG_NO_FVUELTA = "La fecha de vuelta no puede estar vacía.";
+var MSG_FORMATO_FIDA = "La fecha de salida no tiene el formato correcto.";
+var MSG_FORMATO_FVUELTA = "La fecha de vuelta no tiene el formato correcto.";
+var MSG_FIDA_ANTES_HOY = "La fecha de salida no puede ser anterior a hoy.";
+var MSG_FIDA_ANTES_FVUELTA = "La fecha de regreso debe ser posterior a la fecha de salida.";
+
+function abuscar(){
+if(document.AIR_ENTRY_FORM.origentxt.value==""){
+eAlert.showAlert(MSG_NO_ORIGEN,"origentxt")
+document.AIR_ENTRY_FORM.origentxt.focus()
+return}
+if(document.AIR_ENTRY_FORM.destinotxt.value==""){
+eAlert.showAlert(MSG_NO_DESTINO,"destinotxt")
+document.AIR_ENTRY_FORM.destinotxt.focus()
+return}
+if(document.AIR_ENTRY_FORM.fida.value==""){
+eAlert.showAlert(MSG_NO_FIDA,"fida")
+document.AIR_ENTRY_FORM.fida.focus()
+return
+}else{
+if(!validateDate(document.AIR_ENTRY_FORM.fida.value,"fecha de salida",true,true,false)){
+eAlert.showAlert(MSG_FORMATO_FIDA,"fida")
+document.AIR_ENTRY_FORM.fida.focus()
+return
+}else{
+if(!validateDate(document.AIR_ENTRY_FORM.fida.value,"fecha de salida",true,true,false,true)){
+eAlert.showAlert(MSG_FIDA_ANTES_HOY,"fida")
+document.AIR_ENTRY_FORM.fida.focus()
+return}}}
+document.AIR_ENTRY_FORM.fida.value=parseDate(document.AIR_ENTRY_FORM.fida.value)
+var tipo_viaje=""
+for(var i=0;(i<(document.AIR_ENTRY_FORM.tipo.length));i++){
+if(document.AIR_ENTRY_FORM.tipo[i].checked){
+tipo_viaje=document.AIR_ENTRY_FORM.tipo[i].value}}
+if(tipo_viaje=="idayvuelta"){
+if(document.AIR_ENTRY_FORM.fvuelta.value==""){
+eAlert.showAlert(MSG_NO_FVUELTA,"fvuelta")
+document.AIR_ENTRY_FORM.fvuelta.focus()
+return
+}else{
+if(!validateDate(document.AIR_ENTRY_FORM.fvuelta.value,"fecha de llegada",true,true,false)){
+eAlert.showAlert(MSG_FORMATO_FVUELTA,"fvuelta")
+document.AIR_ENTRY_FORM.fvuelta.focus()
+return}
+document.AIR_ENTRY_FORM.fvuelta.value=parseDate(document.AIR_ENTRY_FORM.fvuelta.value)
+var noches=getDays(document.AIR_ENTRY_FORM.fida.value,document.AIR_ENTRY_FORM.fvuelta.value)
+if(noches<0){
+eAlert.showAlert(MSG_FIDA_ANTES_FVUELTA,"fvuelta")
+document.AIR_ENTRY_FORM.fvuelta.focus()
+return}}
+var diff=getDays(document.AIR_ENTRY_FORM.fida.value,document.AIR_ENTRY_FORM.fvuelta.value)}
+document.AIR_ENTRY_FORM.submit()}
+function dates_init(tbusq){
+var fecha1=new Date()
+var cadena1=fecha1.getDate()+'/'+eval(fecha1.getMonth()+1)+'/'+fecha1.getFullYear()
+fecha1=parseDate(cadena1)
+
+fecha1=getNextDate(fecha1,2)
+document.AIR_ENTRY_FORM.fida.value=fecha1
+fecha1=getNextDate(fecha1,1)
+document.AIR_ENTRY_FORM.fvuelta.value=fecha1
+}
+//]]>
+</script>
+<style type="text/css">
+
+#buscCuadrado *{ margin:0; padding:0;}
+#buscCuadrado img { border:none;}
+#buscCuadrado h1 { font-size:20px; padding:10px 10px 0 10px;}
+#buscCuadrado table { margin:0 0 0 7px;}
+#buscCuadrado {margin:0 auto;	width:250px; height:250px; background:url(http://www.barceloviajes.com/gadgets/es-ES/vuelos/images/bg250.gif) no-repeat 0 0; color:#fff; font-family:arial;}
+#buscCuadrado label { font-size:11px; font-weight:bold; color:#fff;}
+#buscCuadrado td.input_grande { background:#fff; padding:1px;}
+#buscCuadrado td.input_grande input { font-size:11px; width:145px; height:15px;}
+#buscCuadrado td.input_peque { background:#fff; padding:1px;}
+#buscCuadrado td.input_peque input { font-size:11px; width:70px; height:15px;}
+#buscCuadrado td.boton { text-align:center;}
+#buscCuadrado td.seleccion { background:#fff; width:48px; padding:1px;}
+#buscCuadrado td.seleccion select { font-size:9px; width:48px; }
+
+</style>
+
+<title>Visita Barceloviajes.com</title>
+</head>
+<body>
+<div id="buscCuadrado">
+	<h1>Busca tus vuelos</h1>
+<form name="AIR_ENTRY_FORM" id="AIR_ENTRY_FORM"  action="http://ad.zanox.com/ppc/" method="get">
+<input type="hidden" name="16007196C462739879&ULP" value="http://www.barceloviajes.com/feeds/zanox/redirect.jsp?zanid" />
+<input type="hidden" name="url" value="http://www.barceloviajes.com/sites/all/procesa_peticion_3os.jsp?foo" />
+<input type="hidden" name="utm_source" value="zanox" />
+<input type="hidden" name="utm_medium" value="web" />
+<input type="hidden" name="utm_campaign" value="cajas-ofertas-vuelos" />
+	<table width="230" border="0" cellpadding="0" cellspacing="3">
+  <tr>
+    <td width="149"><label>Origen:</label></td>
+    <td width="72"><label>Salida:</label></td>
+    </tr>
+  <tr>
+    <td class="input_grande"><input name="origentxt" type="text" id="origentxt" />    </td>
+    <td class="input_peque"><input name="fida" id="fida" type="text" value="dd/mm/aaaa"  />    </td>
+    </tr>
+  <tr>
+    <td><label>Destino</label></td>
+    <td><label>Regreso</label></td>
+    </tr>
+  <tr>
+    <td class="input_grande"><input name="destinotxt" type="text" id="destinotxt" />    </td>
+    <td class="input_peque"><input name="fvuelta" type="text" id="fvuelta" value="dd/mm/aaaa" />    </td>
+    </tr>
+	</table>
+
+
+
+<table width="230" border="0" cellpadding="0" cellspacing="3">
+			<tr>
+				<td><label>Adultos</label></td>
+				<td><label>Niños</label></td>
+				<td rowspan="3" class="radios">
+					<label><input name="tipo" type="radio" value="idayvuelta" checked="checked"/> Ida y vuelta</label>
+					<br />
+					<label><input name="tipo" type="radio" value="ida" /> Solo ida</label>
+                    <br>
+                    <label><input name="residente" type="checkbox" value="S"> Residentes islas</label>				</td>
+			</tr>
+			<tr>
+				<td class="seleccion">
+					<select id="adultos" name="adultos">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>				</td>
+				<td class="seleccion">
+					<select  id="nens" name="nens">
+						<option selected="selected" value="0" >0</option>
+                        <option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>				</td>
+			</tr>
+			<tr>
+			  <td> </td>
+	          <td> </td>
+	  </tr>		
+		</table>
+    <input type="hidden" name="tprod" value="VUE"/>
+    <input type="hidden" name="form" value="AIR_ENTRY_FORM"/>		
+	<table border="0" width="230" cellpadding="0" cellspacing="3">
+  <tr>
+    <td height="31" colspan="3" class="boton" valign="top"><a href="javascript:abuscar();"><img src="http://www.barceloviajes.com/gadgets/es-ES/vuelos/images/bt_buscar.gif" alt="buscar" /></a></td>
+    </tr>
+    <tr>
+	<td colspan="3" class="enlacehome">
+		<img src="http://www.barceloviajes.com/gadgets/es-ES/vuelos/images/tit_barcelo2.gif" alt="">		</td>
+    </tr>
+</table>
+
+	</form>
+</div>
+<script type="text/javascript">
+	javascript:dates_init('vuelos');
+</script>
+</body>
+</html>
+<!-- ENDING of the zanox-affiliate HTML-Code -->
+

@@ -1,0 +1,646 @@
+<!-- START of the zanox affiliate HTML code -->
+<!-- ( The HTML code may not be changed in the sense of faultless functionality! ) -->
+<img src="http://ad.zanox.com/ppv/?16007094C2827153" align="bottom" width="1" height="1" border="0" hspace="1"><style type="text/css">
+    /*= reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;margin: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+fieldset,img {border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal;font-style: normal;}
+ol,ul {list-style: none;}
+caption,th {text-align: left;}
+h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 100%;}
+blockquote:before, blockquote:after,q:before, q:after {	content: "";}
+abbr,acronym { border: 0;}
+:focus {outline: 0;}
+
+/*= comun */
+body {font-size:62.5%;font-family:Arial, Helvetica, sans-serif;line-height:normal; text-align:left; background-color:#FFF; color:#FFF;}
+#buscador_afiliados{font-size:1.2em;font-weight:bold; width:250px;}
+#buscador_afiliados .contenido{clear:both;}
+#buscador_afiliados .block div{margin:3px 0;*margin:0;}
+#buscador_afiliados .block div label{font-size:11px; vertical-align:top;*vertical-align:baseline;}
+#buscador_afiliados h1{background:url(http://www.barceloviajes.com/gadgets/es-ES/buscadores/images/tit_barcelo2.gif) no-repeat 0 0; text-indent:-5000px; margin-bottom:2px;}
+#buscador_afiliados h1 a{height:30px;width:250px;cursor:pointer;display:block}
+.hide{display: none;}
+
+/*= buscadores */
+.search { text-align:left; width:250px;}
+
+/* Tabs */
+.ui-tabs-nav {list-style:none; margin:0; padding:0; position:relative; z-index:1; font-weight:normal;}
+.ui-tabs-nav:after { display:block; clear:both; content:" ";}
+.ui-tabs-nav li a.ui-tabs-selected, .ui-tabs-nav li a:hover { color:#FFF; background-position:100% -150px; outline:0;}
+/* Para Opera. Anadido Barceloviajes */
+html:first-child .ui-tabs-nav li {width:33%;}
+.ui-tabs-nav li {float:left; margin:0; min-width:72px; /* be nice to Opera */}
+.ui-tabs-nav a, .ui-tabs-nav a span {display:block; padding:0 10px; background:url(http://www.barceloviajes.com/gadgets/es-ES/buscadores/images/tab_search.png) no-repeat;}
+.ui-tabs-nav a {position:relative; top:1px; z-index:2; padding-left:0; font-size:12px; line-height:0.8; text-align:center; text-decoration:none; white-space:nowrap; /* required in IE 6 */ color:#FFF;}
+
+.ui-tabs-nav a:hover {color:#FFF;}
+.ui-tabs-nav a.ui-tabs-selected {color:#FFF;}
+.ui-tabs-nav a.ui-tabs-selected, .ui-tabs-nav a:hover{background-position:100% -150px; outline:0; /* prevent dotted border in Firefox */}
+.ui-tabs-nav a { background-position:100% -100px;}
+.ui-tabs-nav a span { width: 48px; /* IE 6 treats width as min-width */ min-width: 48px; height: 14px; /* IE 6 treats height as min-height */ min-height: 14px; padding-top: 6px; padding-right: 0;}
+
+*>.ui-tabs-nav a span { /* hide from IE 6 */ width: auto; height: auto;}
+.ui-tabs-nav a.ui-tabs-selected span {padding-top: 7px;}
+.ui-tabs-nav a.ui-tabs-selected span, .ui-tabs-nav a:hover span { background-position: 0 -50px;}
+.ui-tabs-nav a span { background-position: 0 0; cursor:pointer;}
+
+
+@media print {.ui-tabs-nav {display: none;}}
+/* Tabs - IE bugs */
+* html .ui-tabs-nav { display: inline-block;} /* auto clear, @ IE 6 & IE 7 Quirks Mode */
+*:first-child+html .ui-tabs-nav  { display: inline-block;} /* @ IE 7 Standards Mode  */
+
+
+
+/*= forms */
+.tabcontent{display:none;background-color:#6695ff; height:198px; padding:5px 0 10px 4px;border-top:1px solid #999;-webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px;}
+.row{margin-bottom:10px;}
+.row .end{margin-right:0;}
+
+/* clearfix de .row, .block ul */
+.row:after,.block ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+*:first-child+html .row,*:first-child+html .block ul{zoom:1;display:block;} /* IE7 */
+* html .row,* html .block ul{zoom:1;display:block;}/* IE6 */
+
+.block {float:left; margin-right:7px; *margin-right:3px;}
+.block span{background-color:#fff; display:inline-block; margin-top:2px; *margin-right:2px; padding:1px;}
+.block img {display:inline;margin-bottom:5px;vertical-align:middle;*vertical-align:top;}
+* html .block ul{width:85%;}
+.block select{width:4.3em; border:1px solid #706F6B; font-size:0.8em;}
+.block input{width:112px; border:1px solid #706F6B; padding:1px;}
+.block select.s{width:36px;}
+.block select.m{width:75px;}
+.block input.xl{width:237px;}
+* html .block input.xl{width:230px;}
+*:first-child+html .block input.xl{width:233px;}
+
+button{border:none; background-color:#6695ff;padding:0;cursor:pointer;}
+*:first-child+html button{width:225px;}
+
+.block input.check,.block input.radio{width:1em;margin-right:0;padding:0;border:none;}
+.bt_buscar{text-align:center;}
+* html button{text-align:left; width:200px;}
+*:first-child+html .bt_buscar{text-align:none;}
+a.help {background:url(http://www.barceloviajes.com/gadgets/es-ES/buscadores/images/iconos.png) no-repeat scroll 0 0; color:#FFFFFF; padding:0 4px 1px; text-decoration:none; cursor:help;}
+.ultimo{margin-right:0;}
+* html .ultimo{margin-left:5px;}
+	
+
+	
+/*= Vuelos_______*/
+
+/*= Hoteles______*/
+#hot .bt_buscar{padding-top:10px;}
+
+/*= Vue+Hot______*/
+.vuehot {margin-right:0.3em;}
+</style>
+	<div id="buscador_afiliados">
+		<h1><a href="http://ad.zanox.com/ppc/?16007094C2827153&ULP=http://www.barceloviajes.com/feeds/zanox/redirect.jsp?zanpid=&URL=http://www.barceloviajes.com/?utm_source=afiliado&utm_medium=web" title="Barceló Viajes">Barceló Viajes</a></h1>
+		
+		<div class="search">
+		
+			<ul class="ui-tabs-nav">
+				<li><a href="#vue"><span>Vuelos</span></a></li>
+				<!--  <li class="ui-tabs-selected"><a href="#vue"><span>Hoteles</span></a></li>  -->
+				<li><a href="#hot"><span>Hoteles</span></a></li>
+				<li><a href="#vuehot"><span>Vuelo+hotel</span></a></li>
+			</ul>
+			
+			<!-- Vuelos -->
+			<div id="vue" class="tabcontent">
+				<form id="form_vue" action="http://ad.zanox.com/ppc/" method="GET">
+					<input type="hidden" name="16007094C2827153&ULP" value="http://www.barceloviajes.com/feeds/zanox/redirect.jsp?zanpid=" />
+					<input type="hidden" name="URL" value="http://www.barceloviajes.com/sites/all/procesa_peticion.jsp?" />
+					<div class="row">
+						<div class="block">
+							<label for="origen">Origen</label><br/>
+							<span><input type="text" name="origentxt" id="origentxt"/></span><br>
+							<input type="hidden" name="origen" value="" />
+						</div>
+						<div class="block end">
+							<label for="origen">Destino</label><br/>
+							<span><input type="text" name="destinotxt" id="destinotxt"/></span>
+							<input type="hidden" name="destino" value="" />
+						</div> 
+					</div>
+					<div class="row"> 
+						<div class="block">
+							<label for="regreso">Fecha de Salida</label><br>	
+							<span>
+								<select class="s" id="dia_ida">
+								</select>
+							</span>
+							<span>
+								<select class="m" id="mes_ida" onchange="cargaDias(this.form, this, this.form['dia_ida']);">
+								</select>
+							</span>
+							<input type="hidden" name="fida" id="fida" value=""/>
+						</div>
+						<div class="block end">
+							<label for="regreso">Fecha de Regreso</label><br>
+							<span>
+								<select class="s" id="dia_vuelta">
+								</select>
+							</span>
+							<span>
+								<select class="m" id="mes_vuelta" onchange="cargaDias(this.form, this, this.form['dia_vuelta']);">
+								</select>
+							</span>
+							<input type="hidden" name="fvuelta" id="fvuelta" value=""/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="block">
+							<label for="adultos">Adultos</label><br/>
+							<span>
+								<select class="vuelos" name="adultos" id="adultos">
+								</select>
+							</span>
+						</div>
+						<div class="block">
+							<label for="nens">Niños</label>
+							<a title="Número de niños con edad de 0 a 11 años" class="help">?</a><br/>
+							<span>
+								<select class="vuelos" name="nens" id="nens">
+								</select>
+							</span>
+						</div>
+						<div class="block ultimo">
+							<div>
+								<input class="check" type="radio" name="tipo" id="ida_vuelta" value="idayvuelta" checked="checked" />
+								<label for="ida_vuelta">Ida y vuelta</label>
+							</div>
+							<div>
+								<input class="check" type="radio" name="tipo" id="ida" value="ida"/>
+								<label for="ida">Solo Ida</label>
+							</div>
+							<div>
+								<input class="radio" type="checkbox" name="residente" id="residente" value="S"/>
+								<label for="residente">Residente</label>
+							</div>
+						</div>
+					</div>								
+					<div class="bt_buscar">
+						<button onclick="javascript:validar(this.form);" type="button" value="Buscar ofertas">
+							<img src="http://www.barceloviajes.com/gadgets/es-ES/buscadores/images/bt_buscar_new.gif"/>
+						</button>
+					</div>
+					<input type="hidden" name="form" id="form" value="AIR_ENTRY_FORM"/>
+					<input type="hidden" name="tprod" id="tprod" value="VUE"/>
+
+					<input type="hidden" name="utm_source" id="utm_source" value="ZANOX"/>
+					<input type="hidden" name="utm_medium" id="utm_medium" value="cajas-buscadoras"/>
+					<input type="hidden" name="utm_campaign" id="utm_campaign" value="ZANOX"/>
+					<input type="hidden" name="utm_content" id="utm_content" value="VUE"/>
+					<input type="hidden" name="utm_term" id="utm_term" value=""/>
+				</form>
+			</div> 
+			
+			<!-- Hoteles --> 
+			<div id="hot" class="tabcontent">
+				<form id="form_hot" action="http://ad.zanox.com/ppc/" method="GET">
+					<input type="hidden" name="16007094C2827153&ULP" value="http://www.barceloviajes.com/feeds/zanox/redirect.jsp?zanpid=" />
+					<input type="hidden" name="URL" value="http://www.barceloviajes.com/sites/all/procesa_peticion.jsp?" />
+					<div class="row">
+						<div class="block">
+							<label for="destino">Destino</label><br/>
+							<span><input type="text" class="xl" name="destinotxt" id="destinotxt"/></span>
+							<input type="hidden" name="destino" value="" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="block">
+							<label for="salida">Fecha de Entrada</label> <br/>
+							<span>
+								<select class="s" id="dia_ida">
+								</select>
+							</span>
+							<span>
+								<select class="m" id="mes_ida" onchange="cargaDias(this.form, this, this.form['dia_ida']);">
+								</select>
+							</span>
+							<input type="hidden" name="fida" id="fida" value=""/>
+						</div>
+						<div class="block end">
+							<label for="regreso">Fecha de Salida</label><br>	
+							<span>
+								<select class="s" id="dia_vuelta">
+								</select>
+							</span>
+							<span>
+								<select class="m" id="mes_vuelta" onchange="cargaDias(this.form, this, this.form['dia_vuelta']);">
+								</select>
+							</span>
+							<input type="hidden" name="fvuelta" id="fvuelta" value=""/>
+						</div>
+					</div>
+					<div class="row ">
+						<div class="block">
+							<label for="adultos">Adultos</label><br/>
+							<span>
+								<select name="adultos" id="adultos">
+								</select>
+							</span>
+						</div>
+						<div class="block">
+							<label for="nens">Niños</label>
+							<a title="Número de niños con edad de 0 a 11 años" class="help">?</a><br/>
+							<span>
+								<select name="nens" id="nens">
+								</select>
+							</span>
+						</div>
+						<div class="block">
+							<label for="habitaciones">Habitaciones</label><br/>
+							<span>
+								<select name="habitaciones" id="habitaciones">
+								</select>
+							</span>
+						</div>
+					</div>									
+					<div class="bt_buscar">
+						<button onclick="javascript:validar(this.form);" type="button" value="Buscar ofertas">
+							<img src="http://www.barceloviajes.com/gadgets/es-ES/buscadores/images/bt_buscar_new.gif"/>
+						</button>
+					</div>
+					<input type="hidden" name="form" id="form" value="HOT_ENTRY_FORM"/>
+					<input type="hidden" name="tprod" id="tprod" value="HOT"/>
+
+					<input type="hidden" name="utm_source" id="utm_source" value="ZANOX"/>
+					<input type="hidden" name="utm_medium" id="utm_medium" value="cajas-buscadoras"/>
+					<input type="hidden" name="utm_campaign" id="utm_campaign" value="ZANOX"/>
+					<input type="hidden" name="utm_content" id="utm_content" value="HOT"/>
+					<input type="hidden" name="utm_term" id="utm_term" value=""/>
+				</form>
+			</div>
+		
+		
+			<!--  Vuelo + Hotel -->
+			<div id="vuehot" class="tabcontent">
+				<form id="form_vuehot" action="http://ad.zanox.com/ppc/" method="GET">
+					<input type="hidden" name="16007094C2827153&ULP" value="http://www.barceloviajes.com/feeds/zanox/redirect.jsp?zanpid=" />
+					<input type="hidden" name="URL" value="http://www.barceloviajes.com/sites/all/procesa_peticion.jsp?" />
+					<div class="row">
+						<div class="block">
+							<label for="origen">Origen</label><br/>
+							<span><input type="text" name="origentxt" id="origentxt"/></span>
+						</div>
+						<div class="block end">
+							<label for="destino">Destino</label><br/>
+							<span><input type="text" name="destinotxt" id="destinotxt"/></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="block">
+							<label for="salida">Fecha de Salida</label><br/>
+							<span>
+								<select class="s" id="dia_ida">
+								</select>
+							</span>
+							<span>
+								<select class="m" id="mes_ida" onchange="cargaDias(this.form, this, this.form['dia_ida']);">
+								</select>
+							</span>
+							<input type="hidden" name="fida" id="fida" value=""/>
+						</div>
+						<div class="block end">
+							<label for="regreso">Fecha de Regreso</label><br/>
+							<span>
+								<select class="s" id="dia_vuelta">
+								</select>
+							</span>
+							<span>
+								<select class="m" id="mes_vuelta" onchange="cargaDias(this.form, this, this.form['dia_vuelta']);">
+								</select>
+							</span>
+							<input type="hidden" name="fvuelta" id="fvuelta" value=""/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="block">
+							<label for="adultos">Adultos</label><br/>
+							<span>
+								<select name="adultos" id="adultos">
+								</select>
+							</span>
+						</div>
+						<div class="block">
+							<label for="nens">Niños</label>
+							<a title="Número de niños con edad de 0 a 11 años" class="help">?</a><br/>
+							<span>
+								<select name="nens" id="nens">
+								</select>
+							</span>
+						</div>
+						<div class="block">
+							<label for="habitaciones">Habitac.</label><br/>
+							<span>
+								<select name="habitaciones" id="habitaciones">
+								</select>
+							</span>
+						</div>
+						<div class="block ultimo">
+							<div>
+								<input class="radio" type="radio" name="tipo" value="idayvuelta" checked="checked" />
+								<label for="ida_vuelta">Ida y vuelta</label>
+							</div>
+							<div>
+								<input class="radio" type="radio" name="tipo" value="ida" />
+								<label for="ida">Solo Ida</label>
+							</div>
+							<div>
+								<input class="check" type="checkbox" name="residente" id="residente" value="S"/>
+								<label for="residente">Residente</label>
+							</div>
+						</div>
+					</div>									
+					<div class="bt_buscar">
+						<button onclick="javascript:validar(this.form);" type="button" value="Buscar ofertas" >
+							<img src="http://www.barceloviajes.com/gadgets/es-ES/buscadores/images/bt_buscar_new.gif"/>
+						</button>
+					</div>
+					<input type="hidden" name="form" id="form" value="VMH_ENTRY_FORM"/>
+					<input type="hidden" name="tprod" id="tprod" value="VMH"/>
+
+					<input type="hidden" name="utm_source" id="utm_source" value="ZANOX"/>
+					<input type="hidden" name="utm_medium" id="utm_medium" value="cajas-buscadoras"/>
+					<input type="hidden" name="utm_campaign" id="utm_campaign" value="ZANOX"/>
+					<input type="hidden" name="utm_content" id="utm_content" value="VMH"/>
+					<input type="hidden" name="utm_term" id="utm_term" value=""/>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- 
+	// tipo de producto
+	0: Vuelo
+	1: Hotel
+	2: Vuelo + Hotel
+	-->
+	<input type="hidden" id="producto" name="producto" value="0"/>
+	
+	<script type="text/javascript">
+	// <![CDATA[
+	
+	/* nanotabs ~ Sean Catchpole - Version 0.9 - MIT/GPL */
+	(function(){
+	
+	  var gc = function(s){ return document.getElementsByClassName(s); };
+	  if(!document.getElementsByClassName) {
+	    var all = document.getElementsByTagName('*');
+	    gc = function(c){
+	      var e=[]; c=' '+c+' ';
+	      for(var i=0; i<all.length; i++)
+	        if((' '+all[i].className+' ').indexOf(c)>=0)
+	          e.push(all[i]);
+	      return e;
+	    }
+	  }
+	
+	  var w = function(id){ var d; return (d=document.getElementById(id))&&[d]||gc(id); },
+	  bind = function(f){ var self=this; return function(){ return f.apply(self, arguments); }; },
+	  map = function(f,e,a) { for(var i=0; i<e.length; i++) f.apply(e[i],a||[]); },
+	  add = function(c) { this.className += c; },
+	  remove = function(c) { this.className = this.className.replace(new RegExp("(^|\\s)" + c + "(\\s|$)",'g'),''); } ,
+	  hide = function() { this.style.display="none"; },
+	  show = function() { this.style.display="block"; };
+	
+	  var tab = function(id,a,e,s) {
+	    map(remove,a,[s.s]);
+	    add.call(this,s.s);
+	    map(hide,e);
+	    map(show,w(id));
+		if (id == 'vue')
+			producto = 0;
+		if (id == 'hot')
+			producto = 1;
+		if (id == 'vuehot')
+			producto = 2;
+		
+	  }
+	
+	  nanotabs = function(s){
+	    var i, s=s||{}, o="cesdf".split(''); 
+	    for(i in o) s[o[i]]=s[o[i]]||nanotabs.settings[o[i]];
+	    var c=w(s.c), f=function(){
+	      var t=this,o=t[0],a=[t[1],t[2],t[3],t[4]];
+	      if( !s.f || s.f.apply(o,a)!==false ) tab.apply(o,a);
+	      return false;
+	    }
+	    for(i=0; i<c.length; i++) {
+	      var x=0, e=[], a=[], h=[], t=c[i].getElementsByTagName("a");
+	      for(var j=0; j<t.length; j++)
+	        if(t[j].href.match(/#/)) {
+	          h.push(t[j].href.split('#')[1]);
+	          if(typeof s.d=="string" && h[x]==s.d) s.d=x;
+	          a.push(t[j]);
+	          var g = w(h[x]);
+	          for(var k=0; k<g.length; k++) e.push(g[k]);
+	          x++;
+	        }
+	      for(var j=0; j<a.length; j++)
+	        a[j]['on'+s.e] = bind.call([a[j],h[j],a,e,s],f);
+	      if(typeof s.d=="number" && s.d>=0) tab.call(a[s.d],h[s.d],a,e,s);
+	    }
+	  }
+	
+	  nanotabs.settings = { c:"search", e:"click", s:"ui-tabs-selected", d:0, f:false };
+	  nanotabs();
+	
+	})();
+	
+
+	// Inicializamos el buscador según el tipo de producto especificado en tprod(hidden)
+	var producto=0;
+	var tipo=document.getElementById("producto").value;
+	if(tipo=="0" || tipo=="1" || tipo=="2"){
+		producto = parseInt(tipo);
+	}
+	
+	var fecha = new Date();
+	var dia = fecha.getDate();
+	var mes = fecha.getMonth();
+	var anyo = fecha.getFullYear();
+
+	nanotabs({c:"search",e:"click",s:"ui-tabs-selected",d:producto,f:false});
+
+	function initCampos(){
+		//CAMPOS DE VUELO
+		var form = document.getElementById("form_vue");
+		cargaMeses(form, form["mes_ida"], form["dia_ida"]);
+		cargaMeses(form, form["mes_vuelta"], form["dia_vuelta"]);
+		//adultos y niños
+		for (i=0; i < 9; i++){
+			voption = new Option();
+			voption.text = i+1;
+			voption.value= i+1;
+			form["adultos"].options[i] = voption;
+			voption = new Option();
+			voption.text = i;
+			voption.value= i;
+			form["nens"].options[i] = voption;
+		}
+		
+		//CAMPOS DE HOTEL
+		var form = document.getElementById("form_hot");
+		cargaMeses(form, form["mes_ida"], form["dia_ida"]);
+		cargaMeses(form, form["mes_vuelta"], form["dia_vuelta"]);
+		//habitaciones y niños
+		for (i=0; i < 5; i++){
+			voption = new Option();
+			voption.text = i+1;
+			voption.value= i+1;
+			form["habitaciones"].options[i] = voption;
+			voption = new Option();
+			voption.text = i;
+			voption.value= i;
+			form["nens"].options[i] = voption;
+		}
+		//adultos
+		for (i=0; i < 8; i++){
+			voption = new Option();
+			voption.text = i+1;
+			voption.value= i+1;
+			form["adultos"].options[i] = voption;
+			if (i == 1)
+				form["adultos"].options[i].selected = "selected";
+		}
+
+		//CAMPOS DE V+H
+		var form = document.getElementById("form_vuehot");
+		cargaMeses(form, form["mes_ida"], form["dia_ida"]);
+		cargaMeses(form, form["mes_vuelta"], form["dia_vuelta"]);
+		//habitaciones y niños
+		for (i=0; i < 5; i++){
+			voption = new Option();
+			voption.text = i+1;
+			voption.value= i+1;
+			form["habitaciones"].options[i] = voption;
+			voption = new Option();
+			voption.text = i;
+			voption.value= i;
+			form["nens"].options[i] = voption;
+		}
+		//adultos
+		for (i=0; i < 9; i++){
+			voption = new Option();
+			voption.text = i+1;
+			voption.value= i+1;
+			form["adultos"].options[i] = voption;
+			if (i == 1)
+				form["adultos"].options[i].selected = "selected";
+		}
+	}
+	
+	function cargaMeses(form, elemMes, elemDia){
+		var meses = ["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"];
+		var indice = mes;
+		var currAnyo = anyo;
+		for (i=0;i<12;i++){
+			voption = new Option();
+			voption.text = meses[indice] + " " + currAnyo;
+			voption.value= (indice+1) + "/" + currAnyo;
+			if (voption.value.length <= 6)
+				voption.value= "0" + (indice+1) + "/" + currAnyo;
+			elemMes.options[i]=voption;
+			indice++;
+			if (indice >= 12){
+				indice = 0;
+				currAnyo++;
+			}
+		}
+		cargaDias(form,elemMes,elemDia);
+	}
+	
+	function cargaDias(form, elemMes, elemDia){
+		//dias
+		var elemFecha = elemMes.value.split("/");
+		var maxIndice = (32 - new Date(elemFecha[1], elemFecha[0]-1, 32).getDate());
+		for (i=0; i<elemDia.options.length; i++){elemDia.options[i]=null;}
+		for (i=1;i<=maxIndice;i++){
+			voption = new Option();
+			if (i < 10)
+				voption.text = "0"+i;
+			else
+				voption.text = i;
+			voption.value= voption.text;
+			elemDia.options[i-1]=voption;
+			if (i == dia && (elemFecha[0]-1) == mes)
+				elemDia.options[i-1].selected="selected";
+		}
+	}
+
+	function validar(form) {
+		if (producto != 1 && !validarDestino(form["origentxt"].value)){
+			alert("El origen es incorrecto.");
+			form["origentxt"].focus();
+			return false;
+		}
+
+		if (!validarDestino(form["destinotxt"].value)){
+			alert("El destino es incorrecto.");
+			form["destinotxt"].focus();
+			return false;
+		}
+
+		if (producto != 1 && form["destinotxt"].value == form["origentxt"].value){
+			alert("El origen y el destino no pueden ser el mismo.");
+			form["destinotxt"].focus();
+			return false;
+		}
+
+		//validar fechas
+		var fechaIda = new Date();
+		var splitFecha = form["mes_ida"].value.split("/");
+		fechaIda.setFullYear(splitFecha[1],splitFecha[0]-1,form["dia_ida"].value);
+		var fechaVuelta = new Date();
+		splitFecha = form["mes_vuelta"].value.split("/");
+		fechaVuelta.setFullYear(splitFecha[1],splitFecha[0]-1,form["dia_vuelta"].value);
+
+		if (fechaVuelta < fechaIda){
+			alert("La fecha de regreso no puede ser inferior a la fecha de salida");
+			return false;
+		}
+		if (producto != 0 && fechaVuelta <= fechaIda){
+			alert("El numero de noches no puede ser 0.");
+			return false;
+		}
+
+		//fechas
+		var fida = form["dia_ida"].value + "/" + form["mes_ida"].value;
+		var fvuelta = form["dia_vuelta"].value + "/" + form["mes_vuelta"].value;
+		form["fida"].value = fida;
+		form["fvuelta"].value = fvuelta
+
+		//validación de campos utm_*
+		var valor = "";
+		if (producto != 1) {
+			valor = form["origentxt"].value.replace(/\s/g, "-") + "-";
+		}
+		valor += form["destinotxt"].value.replace(/\s/g, "-");
+		form["utm_term"].value = valor;
+
+		form.submit();
+	}
+
+	function validarDestino(campo) {
+		campo = campo.replace(/\s/g, "");
+		var RegExPattern = /^[A-Za-záéíúóÁÉÍÓÚ]*$/
+		if ((campo.length > 2) && (campo.match(RegExPattern))) {
+			return true;
+		} else {
+			return false; 
+		} 
+	}
+
+	initCampos();
+	// ]]>
+	</script>
+<!-- ENDING of the zanox-affiliate HTML-Code -->
+

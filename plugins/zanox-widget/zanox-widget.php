@@ -47,7 +47,6 @@ function widget_zanox_init() {
 	
 	function get_widget_zanox_code_file( $targetType ) {
 		// this is the var which contains our result.
-		$result = "";
 		$plugin_path= dirname(__FILE__);
 
 		// Read file zanox-$targetType.shtml
@@ -61,7 +60,13 @@ function widget_zanox_init() {
 	
 	function widget_zanox_control() {
 		// Types of targets
-                $targetTypes= array( 'multibuscador', 'hoteles', 'vuelos' );
+		// TODO: get targetTypes from the database
+        $targetTypes= array( 'barcelo-multibuscador', 
+                            'barcelo-hoteles', 
+                            'barcelo-hoteles-vertical', 
+                            'barcelo-vuelos', 
+                            'barcelo-vuelos-vertical',
+                            'casadellibro-logo' );
 
 		// Read options
 		$options = $newoptions = get_option('widget_zanox');
@@ -95,4 +100,3 @@ function widget_zanox_init() {
 }
 
 add_action('plugins_loaded', 'widget_zanox_init');
-?>
