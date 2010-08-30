@@ -66,7 +66,10 @@ function widget_zanox_init() {
                             'barcelo-hoteles-vertical', 
                             'barcelo-vuelos', 
                             'barcelo-vuelos-vertical',
-                            'casadellibro-logo' );
+                            'casadellibro-logo',
+                            'fnac-logo-cuadrado',
+                            'fnac-logo-mini',
+                             );
 
 		// Read options
 		$options = $newoptions = get_option('widget_zanox');
